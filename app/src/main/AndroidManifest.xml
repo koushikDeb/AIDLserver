@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.koushik.aidlserver">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="test.koushik.aidlserver.Service.Sereverservice"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="test.koushik.aidlserver.simpletest"/>
+            </intent-filter>
+
+
+
+
+        </service>
+
+        <activity android:name="test.koushik.aidlserver.MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
